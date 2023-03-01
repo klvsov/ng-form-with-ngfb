@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="formGroup">
+  <lib-input
+    [control]="formGroup.controls.name"
+    inputId="name"
+    label="Your name"
+    type="text"
+    [isSubmitted]="isFormSubmitted"
+  ></lib-input>
+  <lib-input
+    [control]="formGroup.controls.email"
+    inputId="email"
+    label="Email Address"
+    type="email"
+    [isSubmitted]="isFormSubmitted"
+  ></lib-input>
+  <lib-input
+    [control]="formGroup.controls.message"
+    inputId="message"
+    label="Your name"
+    [multiRows]="true"
+    [isSubmitted]="isFormSubmitted"
+  ></lib-input>
+  <lib-button btnLabel="Send form" [disabled]="isLoading"></lib-button>
+</form>
