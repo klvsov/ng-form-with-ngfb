@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NGGetformIoModule } from 'ng-getform-io';
 import { AppComponent } from './app.component';
-import { AngularFormGetformIoModule } from 'angular-form-getform-io';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AngularFormGetformIoModule],
+  imports: [BrowserModule, NGGetformIoModule],
   providers: [],
   bootstrap: [AppComponent],
 })
